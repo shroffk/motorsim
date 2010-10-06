@@ -31,6 +31,7 @@ set_requestfile_path("${TOP}/as","/req")
 set_pass0_restoreFile("motorSim_positions.sav")
 set_pass0_restoreFile("motorSim_settings.sav")
 set_pass1_restoreFile("motorSim_settings.sav")
+set_pass1_restorFile("sensor_settings.sav")
 
 cd ${TOP}/iocBoot/${IOC}
 iocInit()
@@ -38,3 +39,5 @@ iocInit()
 ## more autosave/restore machinery
 create_monitor_set("motorSim_positions.req", 5 , "P=test:")
 create_monitor_set("motorSim_settings.req", 15 , "P=test:")
+create_monitor_set("sensor_settings.req", 15 , "P=test:")
+

@@ -19,6 +19,8 @@ REQ += basic_motor_settings.req
 REQ += motor_positions.req
 REQ += motorSim_settings.req
 REQ += motorSim_positions.req
+REQ += sensor.req
+REQ += sensor_settings.req
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
