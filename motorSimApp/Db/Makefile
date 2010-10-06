@@ -12,6 +12,7 @@ include $(TOP)/configure/CONFIG
 # databases, templates, substitutions like this
 DB += motorSim.substitutions
 DB += basic_asyn_motor.db
+DB += sensor.db
 
 REQ += basic_motor_settings.req
 REQ += motor_positions.req

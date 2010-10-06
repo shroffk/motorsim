@@ -11,6 +11,7 @@ dbLoadDatabase("dbd/mtrSim.dbd",0,0)
 mtrSim_registerRecordDeviceDriver(pdbbase) 
 
 ## Load record instances
+dbLoadRecords("db/sensor.db","P=test,M=m1")
 dbLoadTemplate("db/motorSim.substitutions")
 
 # Create simulated motors: ( start card , start axis , low limit, high limit, home posn, # cards, # axes to setup)
