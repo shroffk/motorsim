@@ -10,7 +10,13 @@ include $(TOP)/configure/CONFIG
 #----------------------------------------------------
 # Create and install (or just install) into <top>/db
 # databases, templates, substitutions like this
-#DB += xxx.db
+DB += motorSim.substitutions
+DB += basic_asyn_motor.db
+
+REQ += basic_motor_settings.req
+REQ += motor_positions.req
+REQ += motorSim_settings.req
+REQ += motorSim_positions.req
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
