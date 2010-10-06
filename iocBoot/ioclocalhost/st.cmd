@@ -26,7 +26,7 @@ save_restoreSet_DatedBackupFiles(1)
 #save_restoreSet_status_prefix("test:")
 
 set_savefile_path("${TOP}/as","/save")
-#set_requestfile_path("${TOP}/as","/req")
+set_requestfile_path("${TOP}/as","/req")
 
 set_pass0_restoreFile("motorSim_positions.sav")
 set_pass0_restoreFile("motorSim_settings.sav")
@@ -36,5 +36,5 @@ cd ${TOP}/iocBoot/${IOC}
 iocInit()
 
 ## more autosave/restore machinery
-create_monitor_set("motorSim_positions.req", 5 , "")
-create_monitor_set("motorSim_settings.req", 15 , "")
+create_monitor_set("motorSim_positions.req", 5 , "P=test:")
+create_monitor_set("motorSim_settings.req", 15 , "P=test:")
