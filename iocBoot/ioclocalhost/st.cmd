@@ -15,9 +15,9 @@ dbLoadTemplate("db/sensor.substitutions")
 dbLoadTemplate("db/motorSim.substitutions")
 
 # Create simulated motors: ( start card , start axis , low limit, high limit, home posn, # cards, # axes to setup)
-motorSimCreate( 0, 0, -32000, 32000, 0, 1, 4 )
+motorSimCreate( 0, 0, -32000, 32000, 0, 1, 6 )
 # Setup the Asyn layer (portname, low-level driver drvet name, card, number of axes on card)
-drvAsynMotorConfigure("motorSim1", "motorSim", 0, 4)
+drvAsynMotorConfigure("motorSim1", "motorSim", 0, 6)
 
 ## autosave/restore machinery
 save_restoreSet_Debug(0)
@@ -31,7 +31,7 @@ set_requestfile_path("${TOP}/as","/req")
 set_pass0_restoreFile("motorSim_positions.sav")
 set_pass0_restoreFile("motorSim_settings.sav")
 set_pass1_restoreFile("motorSim_settings.sav")
-set_pass1_restorFile("sensor_settings.sav")
+set_pass1_restoreFile("sensor_settings.sav")
 
 cd ${TOP}/iocBoot/${IOC}
 iocInit()

@@ -22,9 +22,10 @@ mtrSim_DBD += devSoftMotor.dbd
 mtrSim_DBD += motorRecord.dbd
 mtrSim_DBD += motorSimSupport.dbd
 mtrSim_DBD += asSupport.dbd
+mtrSim_DBD += calcSupport.dbd
 
 # Add all the support libraries needed by this IOC
-mtrSim_LIBS += softMotor motorSimSupport motor asyn autosave
+mtrSim_LIBS += softMotor motorSimSupport motor asyn autosave calc
 
 # mtrSim_registerRecordDeviceDriver.cpp derives from mtrSim.dbd
 mtrSim_SRCS += mtrSim_registerRecordDeviceDriver.cpp
