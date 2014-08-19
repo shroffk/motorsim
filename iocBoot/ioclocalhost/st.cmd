@@ -1,4 +1,4 @@
-#!../../bin/linux-x86/mtrSim
+#!../../bin/linux-x86_64/mtrSim
 
 ## You may have to change motorSim to something else
 ## everywhere it appears in this file
