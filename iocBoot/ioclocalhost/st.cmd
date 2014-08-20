@@ -23,21 +23,20 @@ drvAsynMotorConfigure("motorSim1", "motorSim", 0, 6)
 save_restoreSet_Debug(0)
 save_restoreSet_IncompleteSetsOk(1)
 save_restoreSet_DatedBackupFiles(1)
-#save_restoreSet_status_prefix("test:")
 
 set_savefile_path("${TOP}/as","/save")
 set_requestfile_path("${TOP}/as","/req")
 
-set_pass0_restoreFile("motorSim_positions.sav")
-set_pass0_restoreFile("motorSim_settings.sav")
-set_pass1_restoreFile("motorSim_settings.sav")
-set_pass1_restoreFile("sensor_settings.sav")
+set_pass0_restoreFile("info_positions.sav")
+set_pass0_restoreFile("info_settings.sav")
+set_pass1_restoreFile("info_settings.sav")
 
 cd ${TOP}/iocBoot/${IOC}
 iocInit()
 
 ## more autosave/restore machinery
-create_monitor_set("motorSim_positions.req", 5 , "P=test:")
-create_monitor_set("motorSim_settings.req", 15 , "P=test:")
-create_monitor_set("sensor_settings.req", 15 , "P=test:")
+cd ${TOP}/as/req
+makeAutosaveFiles()
+create_monitor_set("info_positions.req", 5 , "")
+create_monitor_set("info_settings.req", 15 , "")
 

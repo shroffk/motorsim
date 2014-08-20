@@ -1,6 +1,0 @@
-file "sensor.req", P=test,N=1
-file "sensor.req", P=test,N=2
-file "sensor.req", P=test,N=3
-file "sensor.req", P=test,N=4
-file "sensor.req", P=test,N=5
-file "sensor.req", P=test,N=6
