@@ -6,5 +6,5 @@
 
 
 cd ./opi
-edm -x -m "P=test:,M1=m1,M2=m2,M3=m3,M4=m4,M5=m5,M6=m6" motor6x.edl &
+edm -x -m "P=XF:31IDA-OP,M1={Tbl-Ax:X1}Mtr,M2={Tbl-Ax:X2}Mtr,M3={Tbl-Ax:X3}Mtr,M4={Tbl-Ax:X4}Mtr,M5={Tbl-Ax:X5}Mtr,M6={Tbl-Ax:X6}Mtr" motor6x.edl &
 
