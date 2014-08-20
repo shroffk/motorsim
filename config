@@ -1,0 +1,4 @@
+NAME=motorsim
+USER=dchabot
+PORT=4061
+HOST=dev32new
