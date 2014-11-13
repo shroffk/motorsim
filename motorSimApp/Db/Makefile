@@ -14,6 +14,7 @@ DB += basic_asyn_motor.db
 DB += motorSim.substitutions
 DB += sensor.db
 DB += sensor.substitutions
+DB += fakemotor.db
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
