@@ -9,7 +9,7 @@ record(seq, "$(Sys)$(Dev)-SP_") {
     field(LNK1, "$(Mtr).DISA")
 
     # write setpoint to mtr rec
-    field(DLY2, "1.0")
+    field(DLY2, "0.1")
     field(DOL2, "$(Sys)$(Dev)-SP")
     field(LNK2, "$(Mtr).VAL CP")
 
@@ -21,7 +21,7 @@ record(ai, "$(Sys)$(Dev)-I") {
 }
 
 record(bo, "$(Sys)$(Dev)Cmd:Go-Cmd") {
-    field(VAL, "0")
+    field(DOL, "0")
     field(OUT, "$(Mtr).DISA CPP")
 }
 
