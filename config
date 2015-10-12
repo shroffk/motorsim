@@ -1,4 +1,4 @@
 NAME=motorsim
-USER=dchabot
-PORT=4061
-HOST=32
+USER=softioc
+PORT=2048
+HOST=localhost
