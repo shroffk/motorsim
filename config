@@ -1,4 +1,4 @@
 NAME=motorsim
-USER=softioc
+USER=root
 PORT=2048
 HOST=localhost
