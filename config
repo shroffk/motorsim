@@ -1,4 +1,3 @@
 NAME=motorsim
 USER=root
 PORT=2048
-HOST=localhost
