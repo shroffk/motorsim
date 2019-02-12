@@ -23,6 +23,14 @@ record(motor,"$(P)$(M)")
     info(autosaveFields, "DIR DHLM DLLM TWV SREV MRES ERES RRES VBAS VELO VMAX ACCL BDST BVEL BACC RDBD DESC EGU RTRY UEIP URIP DLY RDBL PREC DISA DISP FOFF OFF FRAC OMSL JVEL JAR PCOF ICOF DCOF HVEL NTM NTMF")
 }
 
+record(ai, "$(P)$(M)_Alarm") {
+    field(INP, "$(P)$(M).RBV CP")
+    field(HIHI, "15.0")
+    field(LOLO, "-15.0")
+    field(HHSV, "MAJOR")
+    field(LLSV, "MAJOR")
+}
+
 record(transform, "$(P)$(M)_ableput") {
   field(CLCB, "a")
   field(CLCC, "a")
